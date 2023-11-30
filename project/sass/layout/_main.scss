@@ -1,0 +1,66 @@
+#presentation {
+    padding: $spacing-md;
+    h4 {
+        font-weight: 500;
+    }
+    p {
+        font-size: 0.9rem;
+        color: $text-dark;
+    }
+
+    div {
+        margin: $spacing-sm $spacing-md 0 $spacing-xl;
+    }
+
+    .icon-holder {
+        position:absolute;
+        background-color: $warning;
+        padding: 1.8rem;
+        left: 0;
+    }
+
+    i {
+        position:absolute;
+        // top: 50%;
+        // left: 50%;
+    }
+
+
+}
+
+#hero {
+
+    div {
+        margin-left: $spacing-xl;
+    }
+    
+    a {
+        padding: $spacing-sm;
+
+    }
+}
+
+#featured {
+    padding: $spacing-md;
+}
+
+.recommendations {
+    margin-bottom: $spacing-xl;
+}
+
+.card-body div:last-child {
+    clear:both;
+    img {
+        width: 2rem;
+        border-radius: 100%;
+    }
+
+    .bi {
+        float:right;
+        color: $text-dark;
+    }
+
+    p {
+        color: $text-dark
+    }
+}

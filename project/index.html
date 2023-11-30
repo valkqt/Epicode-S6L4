@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta title="SCSS Practice 2" />
+    <meta name="author" content="valkqt" />
+    <meta name="description" content="weheline frogeline 3dgrineline" />
+    <link rel="stylesheet" href="styles/core.css" />
+    <link
+      rel="stylesheet"
+      href="/node_modules/bootstrap-icons/font/bootstrap-icons.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid d-flex">
+          <a class="navbar-brand" href="#"><img src="images/logo.svg"></a>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+          </div>
+          <div id="topbar-right">
+            <i class="bi bi-bell rounded-circle bg-dark-subtle" style="width: 1em; height: 1em"></i>
+            <img src="images/avatar-1.jpg" class="rounded-circle" />
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="container-fluid bg-primary text-white row align-items-center" id="hero">
+        <div class="col">
+          <h1>Welcome Web Students!</h1>
+          <p>
+            Hand-picked instructor and expertly crafted courses, designed for
+            the modern students and entrepreneur.
+          </p>
+          <a class="btn btn-success text-white">Browse Courses</a>
+          <a class="btn btn-light">Are You Instructor?</a>
+        </div>
+        <div class="col">
+          <img src="images/hero-img.png" class="mt-lg-1"/>
+        </div>
+      </section>
+      <section id="presentation" class="row">
+        <div class="d-flex">
+          <div
+            class="d-flex justify-content-center align-items-center bg-warning rounded-circle icon-holder"
+          >
+            <i class="bi bi-camera-video"></i>
+          </div>
+          <div>
+            <h4>30,000 online courses</h4>
+            <p>Enjoy a variety of fresh topics</p>
+          </div>
+        </div>
+        <div class="d-flex">
+          <div
+            class="d-flex justify-content-center align-items-center bg-warning rounded-circle icon-holder"
+          >
+            <i class="bi bi-people bg-warning rounded-circle"></i>
+          </div>
+          <div>
+            <h4>30,000 online courses</h4>
+            <p>Enjoy a variety of fresh topics</p>
+          </div>
+        </div>
+        <div class="d-flex">
+          <div
+            class="d-flex justify-content-center align-items-center bg-warning rounded-circle icon-holder"
+          >
+            <i class="bi bi-clock bg-warning rounded-circle"></i>
+          </div>
+          <div>
+            <h4>30,000 online courses</h4>
+            <p>Enjoy a variety of fresh topics</p>
+          </div>
+        </div>
+      </section>
+      <section class="bg-dark-subtle" id="featured">
+        <div class="recommendations">
+          <h2>Recommended to you</h2>
+          <div class="card-container d-flex gap-3">
+            <div class="card" style="width: 18rem">
+              <img
+                src="images/course-graphql.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  GraphQL: introduction to graphQL for beginners
+                </h5>
+                <p class="card-text">
+                  <i class="bi bi-clock"></i>
+                  2h 40m
+                  <i class="bi bi-bar-chart-fill"></i>
+                  Advance
+                </p>
+                <p>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-half"></i>
+                  <i class="bi bi-star"></i>
+                  <i class="bi bi-star"></i>
+                  2.5 <span>&lpar;1500&rpar;</span>
+                </p>
+                <p>$500<span>$600</span></p>
+                <div class="post-author">
+                    <p><img src="images/avatar-2.jpg">
+                        Plofi Briccoli<i class="bi bi-bookmark"></i>
+                    </p>
+                </div>
+              </div>
+            </div>
+            <div class="card" style="width: 18rem">
+              <img
+                src="images/course-javascript.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  A Complete Beginner's Guide to JavaScript
+                </h5>
+                <p class="card-text">
+                  <i class="bi bi-clock"></i>
+                  4h 10m
+                  <i class="bi bi-bar-chart-fill"></i>
+                  Advance
+                </p>
+                <p>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-half"></i>
+                  <i class="bi bi-star"></i>
+                  3.5 <span>&lpar;7500&rpar;</span>
+                </p>
+                <p>$700<span>$850</span></p>
+                <div class="post-author">
+                    <p><img src="images/avatar-3.jpg">
+                        Plofi Briccoli<i class="bi bi-bookmark"></i>
+                    </p>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="recommendations">
+          <h2>Most Popular</h2>
+          <div class="card-container d-flex  gap-3">
+            <div class="card" style="width: 18rem">
+              <img
+                src="images/course-html.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  HTML Full Course - Build a Website Tutorial
+                </h5>
+                <p class="card-text">
+                  <i class="bi bi-clock"></i>
+                  3h 16m
+                  <i class="bi bi-bar-chart-fill"></i>
+                  Beginner
+                </p>
+                <p>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star"></i>
+                  <i class="bi bi-star"></i>
+                  3.0 <span>&lpar;1600&rpar;</span>
+                </p>
+                <p>$550<span>$700</span></p>
+                <div class="post-author">
+                    <p><img src="images/avatar-4.jpg">
+                        Plofi Briccoli<i class="bi bi-bookmark"></i>
+                    </p>
+                </div>
+
+              </div>
+            </div>
+            <div class="card" style="width: 18rem">
+              <img
+                src="images/course-javascript.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  A Complete Beginner's Guide to JavaScript
+                </h5>
+                <p class="card-text">
+                  <i class="bi bi-clock"></i>
+                  4h 10m
+                  <i class="bi bi-bar-chart-fill"></i>
+                  Advance
+                </p>
+                <p>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-half"></i>
+                  <i class="bi bi-star"></i>
+                  3.5 <span>&lpar;7500&rpar;</span>
+                </p>
+                <p>$700<span>$850</span></p>
+                <div class="post-author">
+                    <p><img src="images/avatar-5.jpg">
+                        Plofi Briccoli<i class="bi bi-bookmark"></i>
+                    </p>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="recommendations">
+          <h2>Trending</h2>
+          <div class="card-container d-flex  gap-3">
+            <div class="card" style="width: 18rem">
+              <img
+                src="images/course-gatsby.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Revolutionize how you build the web</h5>
+                <p class="card-text">
+                  <i class="bi bi-clock"></i>
+                  1h 46m
+                  <i class="bi bi-bar-chart-fill"></i>
+                  Advance
+                </p>
+                <p>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star"></i>
+                  <i class="bi bi-star"></i>
+                  <i class="bi bi-star"></i>
+                  2.0 <span>&lpar;16500&rpar;</span>
+                </p>
+                <p>$800<span>$850</span></p>
+                <div class="post-author">
+                    <p><img src="images/avatar-6.jpg">
+                        Plofi Briccoli<i class="bi bi-bookmark"></i>
+                    </p>
+                </div>
+
+              </div>
+            </div>
+            <div class="card" style="width: 18rem">
+              <img
+                src="images/course-html.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  HTML Full Course - Build a Website Tutorial
+                </h5>
+                <p class="card-text">
+                  <i class="bi bi-clock"></i>
+                  3h 16m
+                  <i class="bi bi-bar-chart-fill"></i>
+                </p>
+                <p>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star"></i>
+                  <i class="bi bi-star"></i>
+                  3.0 <span>&lpar;1600&rpar;</span>
+                </p>
+                <p>$550<span>$700</span></p>
+                <div class="post-author">
+                    <p><img src="images/avatar-2.jpg">
+                        Plofi Briccoli<i class="bi bi-bookmark"></i>
+                    </p>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-dark-subtle">
+      <address>&copy; 2022 Geeks. All Rights Reserved.</address>
+      <ul>
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Feedback</a></li>
+        <li><a href="#">Support</a></li>
+      </ul>
+    </footer>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  </body>
+</html>
